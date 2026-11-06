@@ -1,0 +1,26 @@
+# Rust build output
+/target/
+
+# Local models
+*.gguf
+*.gguf.part
+/models/
+
+# Application data
+/.llm-cheap/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Temporary files
+*.log
+*.tmp

@@ -1,0 +1,4 @@
+[build]
+# Activa AVX2/FMA/F16C en llama.cpp (llama-cpp-sys los mapea a GGML_AVX2, etc.).
+# No usamos target-cpu=native: el cc-wrapper de Nix elimina -march=native.
+rustflags = ["-C", "target-feature=+avx,+avx2,+fma,+f16c,+bmi2"]

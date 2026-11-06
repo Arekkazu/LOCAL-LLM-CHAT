@@ -1,0 +1,15 @@
+[package]
+name = "llm-cheap"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "Experimento local de inferencia con llama.cpp desde Rust"
+
+[dependencies]
+anyhow = "1"
+crossterm = "0.28"
+llama-cpp-2 = { version = "0.1.158", features = ["sampler", "cuda"] }
+ratatui = { version = "0.29", features = ["unstable-rendered-line-info"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+unicode-width = "0.2"
